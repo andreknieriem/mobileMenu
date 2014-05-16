@@ -1,0 +1,51 @@
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="jquery.mobileSelect.js"></script>
+	<link href="demo.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+		$(function(){
+			$('.menu').mobileMenu({
+				depthSign: '-',
+				target: $('.testwrapper'),
+				minDepth: 0,
+				maxDepth: 10000
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+	<ul class="menu">
+		<li><a href="/test1">Test1</a></li>
+		<li><a href="/test5">Test2</a>
+			<ul>
+				<li><a href="/sub5">sub5</a></li>
+				<li><a href="/sub6">sub6</a></li>
+				<li><a href="/sub7">sub7</a></li>
+				<li><a href="/sub8">sub8</a></li>
+			</ul>
+		</li>
+		<li><a href="/test3">Test3</a></li>
+		<li><a href="/test4">Test4</a></li>
+		<li><a href="/test5">Test5</a>
+			<ul>
+				<li><a href="/sub1">sub1</a></li>
+				<li><a href="/sub2">sub2</a></li>
+				<li><a href="/sub3">sub3</a></li>
+				<li><a href="/sub4">sub4</a>
+					<ul>
+						<li><a href="/subsub1">subsub1</a></li>
+						<li><a href="/subsub2">subsub2</a></li>
+						<li><a href="/subsub3">subsub3</a></li>
+						<li><a href="/subsub4">subsub4</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><a href="/test6">Test6</a></li>
+	</ul>
+	<div class="testwrapper"></div>
+	</div>
+</body>
+</html>
